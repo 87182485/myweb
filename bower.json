@@ -1,0 +1,40 @@
+{
+  "name": "myweb",
+  "version": "0.0.1",
+  "main":[
+    "less/flat-ui.less",
+    "dist/css/flat-ui.css",
+    "dist/js/flat-ui.js",
+    "dist/fonts/flat-ui-icons-regular.eot",
+    "dist/fonts/flat-ui-icons-regular.svg",
+    "dist/fonts/flat-ui-icons-regular.ttf",
+    "dist/fonts/flat-ui-icons-regular.woff"
+  ],
+  "dependencies": {
+    "angular": "~1.3.2",
+    "json3": "~3.3.1",
+    "es5-shim": "~3.1.0",
+    "bootstrap": "~3.2.0",
+    "bootstrap-switch": "~3.0.2",
+    "angular-resource": "~1.3.2",
+    "angular-cookies": "~1.3.2",
+    "angular-sanitize": "~1.3.2",
+    "angular-animate": "~1.3.2",
+    "angular-touch": "~1.3.2",
+    "angular-route": "~1.3.2",
+    "holderjs": "~2.4.0",
+    "html5shiv": "~3.7.2",
+    "jquery-ui-touch-punch": "*",
+    "respond": "~1.4.2",
+    "typeahead.js": "~0.10.5",
+    "google-code-prettify": "~1.0.3",
+    "bootstrap-tagsinput": "~0.4.2",
+    "videojs": "~4.7.2",
+    "select2": "~3.5.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.3.0",
+    "angular-scenario": "~1.3.0"
+  },
+  "appPath": "app"
+}

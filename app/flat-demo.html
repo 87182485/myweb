@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../bower_components/flat-ui/dist/css/flat-ui.min.css" rel="stylesheet">
+  <link href="styles/flat-demo.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-embossed" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Health First</a>
+  </div>
+  <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setting <b class="caret"></b></a>
+        <span class="dropdown-arrow"></span>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="flat-demo-cn.html">中文</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="box">
+    <div class="row row-offcanvas row-offcanvas-left">
+      <!-- sidebar -->
+      <div class="column col-md-1 col-xs-1 sidebar-offcanvas" id="sidebar">
+
+        <ul class="nav">
+          <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+        </ul>
+
+        <ul class="nav hidden-xs" id="lg-menu">
+          <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Featured</a></li>
+          <li><a href="#stories"><i class="glyphicon glyphicon-list"></i> Stories</a></li>
+          <li><a href="#"><i class="glyphicon glyphicon-paperclip"></i> Saved</a></li>
+          <li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Refresh</a></li>
+        </ul>
+
+        <!-- tiny only nav-->
+        <ul class="nav visible-xs" id="xs-menu">
+          <li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
+          <li><a href="#stories" class="text-center"><i class="glyphicon glyphicon-list"></i></a></li>
+          <li><a href="#" class="text-center"><i class="glyphicon glyphicon-paperclip"></i></a></li>
+          <li><a href="#" class="text-center"><i class="glyphicon glyphicon-refresh"></i></a></li>
+        </ul>
+
+      </div>
+      <!-- /sidebar -->
+      <!-- main -->
+      <div class="column col-md-11 col-xs-11" id="main">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-lg btn-primary">
+            Hello World
+          </button>
+        </div>
+      </div>
+      <!-- /main -->
+    </div>
+  </div>
+</div>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/flat-ui/dist/js/flat-ui.min.js"></script>
+</body>
+</html>
