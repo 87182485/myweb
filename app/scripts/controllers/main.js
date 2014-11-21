@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the mywebApp
  */
-angular.module('mywebApp')
+angular.module('ngNewsApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

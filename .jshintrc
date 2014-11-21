@@ -1,3 +1,5 @@
+/* global app:true */
+/* exported app */
 {
   "node": true,
   "browser": true,
