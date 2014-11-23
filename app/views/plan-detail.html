@@ -1,0 +1,13 @@
+<div class="container">
+  <h2 class="text-primary text-capitalize">{{planDetail.name}}</h2>
+
+  <div class="row">
+    <div class="col-md-8">
+      <progressbar class="progress-striped" ng-class="getPlanStatus().daysLeft>0?'active':''"
+                   value="getPlanStatus().progress" type="{{getPlanStatus().type}}">
+        {{getPlanStatus().daysLeft}} Left to complete this plan
+      </progressbar>
+    </div>
+
+  </div>
+</div>

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="bower_components/videojs/dist/video-js/video-js.css" />
     <link rel="stylesheet" href="bower_components/select2/select2.css" />
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="bower_components/flat-ui/dist/css/flat-ui.css"/>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -25,15 +26,19 @@
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div ng-include="'views/nav.html'"></div>
     <!-- Add your site or application content here -->
-    <div class="container" ng-view="">
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Gary Yang</p>
+    <div id="wrap">
+      <div ng-include="'views/nav.html'"></div>
+      <div class="container" ng-view="">
       </div>
     </div>
 
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-center"><span class="glyphicon glyphicon-heart"></span> from the Gary Yang</p>
+      </div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -83,6 +88,8 @@
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/hammerjs/hammer.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/flat-ui/dist/js/flat-ui.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -95,8 +102,12 @@
         <script src="scripts/controllers/nav.js"></script>
         <script src="scripts/controllers/auth.js"></script>
         <script src="scripts/controllers/profile.js"></script>
+    <script src="scripts/controllers/plans.js"></script>
+    <script src="scripts/controllers/plan-detail.js"></script>
         <script src="scripts/services/auth.js"></script>
         <script src="scripts/services/profile.js"></script>
+    <script src="scripts/services/plans.js"></script>
+    <script src="scripts/services/plan-detail.js"></script>
         <script src="scripts/filters/url.js"></script>
         <!-- endbuild -->
 </body>

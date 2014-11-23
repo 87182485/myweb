@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'firebase'
+    'firebase',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -49,6 +50,14 @@ angular
       .when('/users/:userId',{
         templateUrl: 'views/profile.html',
         controller: 'profileController'
+      })
+      .when('/newplan', {
+        templateUrl: 'views/new-plan.html',
+        controller: 'planController'
+      })
+      .when('/plan-detail/:planId', {
+        templateUrl: "views/plan-detail.html",
+        controller: 'planDetailController'
       })
       .otherwise({
         redirectTo: '/'

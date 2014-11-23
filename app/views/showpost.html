@@ -25,15 +25,15 @@
 
   <div ng-repeat="comment in comments" class="row cmt">
     <div class="col-md-12">
-      <p>{{ comment.text }}</p>
+      <p class="comment-text">{{ comment.text }}</p>
       <p class="author">posted by
         <a ng-href="#/users/{{ comment.creatorUID }}">
           {{ comment.creator }}
         </a>
-        <a ng-href=""
+        <a class="btn btn-danger btn-xs" ng-href=""
            ng-click="deleteComment(comment)"
            ng-show="signedIn() && comment.creatorUID === user.uid">
-          (delete)
+          delete
         </a>
       </p>
     </div>

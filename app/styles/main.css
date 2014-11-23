@@ -1,10 +1,23 @@
 /* Space out content a bit */
+html {
+  min-height: 100%;
+  background: #34495E;
+}
 body {
-  background: #F3F3F3;
+  background: #34495E;
+  margin-bottom: 60px;
+}
+
+.input-group :focus {
+  border-color: #1abc9c;
 }
 
 
 /* NAV BAR */
+.navbar {
+  border-radius: 0;
+}
+
 .nav-pic {
   margin: -2px 5px 0 0;
   max-height: 20px;
@@ -13,14 +26,29 @@ body {
   border-radius: 100px;
 }
 
+/*main content*/
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
 
 /* MAIN POSTS PAGE */
+.posts-page {
+  border: .8em solid #34495E;
+  border-radius: 6px;
+}
+
 .post {
   background: #fff;
-  padding:15px 0;
+  padding: 15px 15px;
+  margin: 15px;
   -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2);
   -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border-radius: 6px;
 }
 
 .info {
@@ -62,11 +90,24 @@ body {
 .auth-forms {
   max-width:400px;
   margin:0 auto;
-  background: #fff;
+  background: #EDEFF1;
   padding:1px 25px 25px 25px;
   -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2);
   -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.regular-forms {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #EDEFF1;
+  padding: 1px 25px 25px 25px;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -85,4 +126,29 @@ body {
 .cmt .author {
   font-size:11px;
   color:#bbb;
+}
+
+.comment-text {
+  color: #ffffff;
+}
+
+.arrow-text-left {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  line-height: 0%;
+  border: none;
+  border-left: 20px solid;
+  border-bottom: 20px solid;
+  border-top: 20px solid;
+}
+
+/*Footer*/
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  color: #ffffff;
 }

@@ -1,0 +1,55 @@
+<div class="regular-forms">
+  <form class="form-block" ng-submit="create()">
+    <fieldset>
+      <legend>New Plan</legend>
+    </fieldset>
+    <p ng-show="error" class="text-danger">{{ error }}</p>
+
+    <div class="form-group">
+      <label class="control-label">Plan Name: </label>
+      <input type="text" class="form-control" ng-model="plan.name" required>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="form-group">
+          <label class="control-label">From: </label>
+
+          <div class="input-group">
+            <input type="text" class="form-control" ng-model="plan.from" datepicker-popup="dd/MM/yyyy"
+                   datepicker-options="dateOptions" is-open="startCalendarOpened" ng-required>
+                        <span class="input-group-btn"><button type="button" class="btn btn-default"
+                                                              ng-click="openStartCalendar()">
+                          <i class="glyphicon glyphicon-calendar"></i>
+                        </button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="form-group">
+          <label class="control-label">To: </label>
+
+          <div class="input-group">
+            <input type="text" class="form-control" ng-model="plan.to" datepicker-popup="dd/MM/yyyy"
+                   datepicker-options="dateOptions" is-open="endCalendarOpened" ng-required>
+            <span class="input-group-btn"><button type="button" class="btn btn-default" ng-click="openEndCalendar()">
+              <i class="glyphicon glyphicon-calendar"></i>
+            </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label">Type: </label><br>
+
+      <div class="btn-group">
+        <label class="btn btn-primary" ng-model="plan.type" btn-radio="'Plan 1'">Plan 1</label>
+        <label class="btn btn-primary" ng-model="plan.type" btn-radio="'Plan 2'">Plan 2</label>
+        <label class="btn btn-primary" ng-model="plan.type" btn-radio="'Plan 3'">Plan 3</label>
+      </div>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-success">Create</button>
+  </form>
+</div>
